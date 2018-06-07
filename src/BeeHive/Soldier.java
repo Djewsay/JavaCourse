@@ -2,30 +2,26 @@ package BeeHive;
 
 import java.util.Random;
 
-public class Soldier {
+public class Soldier extends Bee{
 
     int hitpoints;
     int armor;
     int strength;
-    String name = "";
 
-
-
-    public Soldier (int inHitpoints, int inArmor, int inStrength, String inName){
-
-        hitpoints = inHitpoints;
-        armor = inArmor;
-        strength = inStrength;
-        name = inName;
-
+    public Soldier(String name, int hitpoints, int armor, int strength) {
+        super(name);
+        this.hitpoints = hitpoints;
+        this.armor = armor;
+        this.strength = strength;
     }
 
 
+/* best de naam vragen niet met super.getname, maar gewoon .getname */
 
     public void attack(Soldier enemy){
 
         do {
-            System.out.println(this.name + " slaat op "+ enemy.name+ " zijn bakkes en doet " + damageDone() + " damage" + this.hitpoints+" "+ enemy.hitpoints);
+            System.out.println(super.getName() + " slaat op "+ super.getName()+ " zijn bakkes en doet " + damageDone() + " damage" + this.hitpoints+" "+ enemy.hitpoints);
             enemy.hitpoints -= damageDone();
             this.hitpoints -= damageDone();
 
@@ -41,7 +37,7 @@ public class Soldier {
     public void isDead(){
 
         if (hitpoints <= 0);
-        System.out.println(this.name + " is kapotgemaakt");
+        System.out.println(super.getName() + " is kapotgemaakt");
     }
 
 
