@@ -4,7 +4,8 @@ public class ZooMain {
     public static void main(String[] args) {
 
 
-        BirdLike pekkie = new BirdLike();
+        BirdLike pekkie = new BirdLike("Pekkie");
+
 
 
         CatLike mienneke = new CatLike("Mieneke",9);
@@ -33,6 +34,9 @@ public class ZooMain {
         mienneke.scratch();
         simba.rule();
         doge.bite();
+
+
+
 
 
 

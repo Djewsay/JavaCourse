@@ -17,6 +17,16 @@ public class RodentLike extends Animal {
 
     }
 
+    @Override
+    public void eat() {
+        System.out.println("omnomnomnomnomn");
+    }
+
+
+    @Override
+    public void sound() {
+        System.out.println("MIEP");
+    }
 }
 
 

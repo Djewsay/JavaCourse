@@ -23,6 +23,12 @@ public class CatLike extends Animal {
         return lives;
     }
 
+
+    @Override
+    public void eat() {
+        System.out.println("omnomnomnom");
+    }
+
     @Override
     public void sound() {
 

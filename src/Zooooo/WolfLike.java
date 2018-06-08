@@ -28,6 +28,8 @@ public class WolfLike extends Animal {
 
     }
 
-
-
+    @Override
+    public void eat() {
+        System.out.println("omnomnomnom");
+    }
 }
