@@ -15,6 +15,11 @@ public class Main {
         mitch.fly();
         */
 
+
+        System.out.println("De quizmaster zal een opgave ingeven");
+
+
+
         Galgje.galgje();
 
 
